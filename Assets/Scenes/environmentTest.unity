@@ -284,7 +284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -598,9 +598,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 3.35
-  m_Range: 26.8
-  m_SpotAngle: 38
+  m_Intensity: 5.3
+  m_Range: 62.23
+  m_SpotAngle: 49.1
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 748503931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dddc1a37c6a4ee4ea90097a000a2d17, type: 3}
+  m_Script: {fileID: 11500000, guid: c2df7544bcc91894eaa8cd35cb82f6f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!20 &776053820 stripped
@@ -818,7 +818,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -1460,7 +1460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
