@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: 162430ad83cf07949a2ca758a31c40ee
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature_001
+    100004: eye_L
+    100006: eye_R
+    100008: Head
+    100010: Hip
+    100012: LFoot1
+    100014: LFoot2
+    100016: LForearm
+    100018: LHand
+    100020: LKnee
+    100022: LLeg
+    100024: LLeg_001
+    100026: LShoulder
+    100028: LThigh
+    100030: LToe
+    100032: LUpperarm
+    100034: Neck1
+    100036: Neck2
+    100038: Obama
+    100040: //RootNode
+    100042: Reference
+    100044: RFoot1
+    100046: RFoot2
+    100048: RForearm
+    100050: RHand
+    100052: RKnee
+    100054: RLeg
+    100056: RLeg_001
+    100058: RShoulder
+    100060: RThigh
+    100062: RToe
+    100064: RUpperarm
+    100066: Spine1
+    100068: Spine2
+    100070: Spine3
+    100072: Spine4
+    100074: Spine5
+    400000: Armature
+    400002: Armature_001
+    400004: eye_L
+    400006: eye_R
+    400008: Head
+    400010: Hip
+    400012: LFoot1
+    400014: LFoot2
+    400016: LForearm
+    400018: LHand
+    400020: LKnee
+    400022: LLeg
+    400024: LLeg_001
+    400026: LShoulder
+    400028: LThigh
+    400030: LToe
+    400032: LUpperarm
+    400034: Neck1
+    400036: Neck2
+    400038: Obama
+    400040: //RootNode
+    400042: Reference
+    400044: RFoot1
+    400046: RFoot2
+    400048: RForearm
+    400050: RHand
+    400052: RKnee
+    400054: RLeg
+    400056: RLeg_001
+    400058: RShoulder
+    400060: RThigh
+    400062: RToe
+    400064: RUpperarm
+    400066: Spine1
+    400068: Spine2
+    400070: Spine3
+    400072: Spine4
+    400074: Spine5
+    2100000: Material_004__brown_eye_texture_by_jfreak86_jpg
+    2100002: Material_001__ear_texture_png
+    2100004: Material_005__obama_face_texture_png
+    2100006: Material_001_Untitled_004__obama_cloth_texture_png
+    2100008: Material_002__obama_teeth_texture_png
+    2100010: Material_003__obama_teeth_texture_png_001
+    4300000: eye_R
+    4300002: Obama
+    4300004: eye_L
+    7400000: Default Take
+    7400002: ArmatureAction
+    7400004: Idle
+    9500000: //RootNode
+    13700000: eye_L
+    13700002: eye_R
+    13700004: Obama
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
