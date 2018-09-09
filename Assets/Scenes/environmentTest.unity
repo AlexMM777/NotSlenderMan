@@ -15,7 +15,7 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 1
-  m_FogColor: {r: 0.09411765, g: 0.09411765, b: 0.09411765, a: 1}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 2
   m_FogDensity: 0.02
   m_LinearFogStart: 0
@@ -23,10 +23,10 @@ RenderSettings:
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 0.32
+  m_AmbientIntensity: 0
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 2039a0ad0a9d05549928b70362f54902, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 860a66ca4259b384f9ec01b687f71c3c, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.482
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1244873, g: 0.12660146, b: 0.12657157, a: 0.482}
+  m_IndirectSpecularColor: {r: 0.021004308, g: 0.020194331, b: 0.021747787, a: 0.482}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -284,7 +284,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -321,7 +321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.4000244, y: 2.199997}
+  m_AnchoredPosition: {x: -4.4000244, y: 2.2000122}
   m_SizeDelta: {x: 1122.9, y: 484.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328402825
@@ -567,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748503932}
   - component: {fileID: 748503933}
+  - component: {fileID: 748503934}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -597,9 +598,9 @@ Light:
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 6.98
-  m_Range: 7.99
-  m_SpotAngle: 51
+  m_Intensity: 3.35
+  m_Range: 26.8
+  m_SpotAngle: 38
   m_CookieSize: 10
   m_Shadows:
     m_Type: 2
@@ -624,6 +625,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &748503934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 748503931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dddc1a37c6a4ee4ea90097a000a2d17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &776053820 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
@@ -806,7 +818,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -1047,7 +1059,7 @@ Terrain:
   m_Enabled: 1
   serializedVersion: 3
   m_TerrainData: {fileID: 15600000, guid: 68341d189870c82438df4aa82555e5bd, type: 2}
-  m_TreeDistance: 5000
+  m_TreeDistance: 2000
   m_TreeBillboardDistance: 50
   m_TreeCrossFadeLength: 5
   m_TreeMaximumFullLODCount: 50
@@ -1448,7 +1460,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
