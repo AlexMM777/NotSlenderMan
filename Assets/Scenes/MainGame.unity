@@ -567,6 +567,7 @@ GameObject:
   m_Component:
   - component: {fileID: 748503932}
   - component: {fileID: 748503933}
+  - component: {fileID: 748503934}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -624,6 +625,17 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &748503934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 748503931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2df7544bcc91894eaa8cd35cb82f6f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &776053820 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
