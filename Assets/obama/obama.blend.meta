@@ -70,6 +70,40 @@ ModelImporter:
     100128: upperarm_R
     100130: upperleg_L
     100132: upperleg_R
+    100134: Armature_001
+    100136: Head
+    100138: Hip
+    100140: LFoot1
+    100142: LFoot2
+    100144: LForearm
+    100146: LHand
+    100148: LKnee
+    100150: LLeg
+    100152: LLeg_001
+    100154: LShoulder
+    100156: LThigh
+    100158: LToe
+    100160: LUpperarm
+    100162: Neck1
+    100164: Neck2
+    100166: Obama
+    100168: Reference
+    100170: RFoot1
+    100172: RFoot2
+    100174: RForearm
+    100176: RHand
+    100178: RKnee
+    100180: RLeg
+    100182: RLeg_001
+    100184: RShoulder
+    100186: RThigh
+    100188: RToe
+    100190: RUpperarm
+    100192: Spine1
+    100194: Spine2
+    100196: Spine3
+    100198: Spine4
+    100200: Spine5
     400000: Armature
     400002: Bone
     400004: Cylinder
@@ -137,6 +171,40 @@ ModelImporter:
     400128: upperarm_R
     400130: upperleg_L
     400132: upperleg_R
+    400134: Armature_001
+    400136: Head
+    400138: Hip
+    400140: LFoot1
+    400142: LFoot2
+    400144: LForearm
+    400146: LHand
+    400148: LKnee
+    400150: LLeg
+    400152: LLeg_001
+    400154: LShoulder
+    400156: LThigh
+    400158: LToe
+    400160: LUpperarm
+    400162: Neck1
+    400164: Neck2
+    400166: Obama
+    400168: Reference
+    400170: RFoot1
+    400172: RFoot2
+    400174: RForearm
+    400176: RHand
+    400178: RKnee
+    400180: RLeg
+    400182: RLeg_001
+    400184: RShoulder
+    400186: RThigh
+    400188: RToe
+    400190: RUpperarm
+    400192: Spine1
+    400194: Spine2
+    400196: Spine3
+    400198: Spine4
+    400200: Spine5
     2100000: Material_004__brown_eye_texture_by_jfreak86_jpg
     2100002: Material_001__ear_texture_png
     2100004: Material_005__obama_face_texture_png
@@ -146,11 +214,13 @@ ModelImporter:
     4300000: eye_R
     4300002: Cylinder
     4300004: eye_L
+    4300006: Obama
     7400000: Default Take
     9500000: //RootNode
     13700000: Cylinder
     13700002: eye_L
     13700004: eye_R
+    13700006: Obama
   externalObjects: {}
   materials:
     importMaterials: 1
