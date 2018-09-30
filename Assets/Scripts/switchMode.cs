@@ -10,6 +10,9 @@ public class switchMode : MonoBehaviour {
     public GameObject player;
     public GameObject playerStartPos;
     public GameObject SittingObama;
+    public FollowCh Trump1;
+    public FollowCh Trump2;
+    public FollowCh Trump3;
 
     void Start()
     {
@@ -40,11 +43,17 @@ public class switchMode : MonoBehaviour {
             player.SetActive(false);
             SittingObama.SetActive(true);
             player.transform.position = playerStartPos.transform.position;
+            Trump1.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
+            Trump2.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
+            Trump3.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
         }
 
         //set to FPS mode//
         if (Input.GetKey("2"))
         {
+            Trump1.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
+            Trump2.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
+            Trump3.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
             boat.GetComponent<Rigidbody>().isKinematic = true;
             boat.GetComponent<Boat>().enabled = false;
             boatCamera.SetActive(false);

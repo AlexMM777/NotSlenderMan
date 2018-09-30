@@ -328,7 +328,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -562,6 +562,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathMenu: {fileID: 1354385721}
   Player: {fileID: 2057551607}
+  Boat: {fileID: 872080841}
 --- !u!82 &485509018
 AudioSource:
   m_ObjectHideFlags: 0
@@ -871,7 +872,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100040, guid: 162430ad83cf07949a2ca758a31c40ee, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: Boat
       objectReference: {fileID: 0}
     - target: {fileID: 100040, guid: 162430ad83cf07949a2ca758a31c40ee, type: 3}
       propertyPath: m_IsActive
@@ -1109,27 +1110,27 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2072.45
+      value: 265.72
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 94.68
+      value: 35.51
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 486.2
+      value: 491.62344
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: 0.000000021855694
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.00000008742278
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 1.9106855e-15
       objectReference: {fileID: 0}
     - target: {fileID: 400070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1149,7 +1150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -1172,6 +1173,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathMenu: {fileID: 1354385721}
   Player: {fileID: 2057551607}
+  Boat: {fileID: 872080841}
 --- !u!114 &788185768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,7 +1440,7 @@ GameObject:
   - component: {fileID: 872080844}
   m_Layer: 0
   m_Name: Boat
-  m_TagString: Boat
+  m_TagString: BoatController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1922,6 +1924,9 @@ MonoBehaviour:
   player: {fileID: 2057551607}
   playerStartPos: {fileID: 1844453301}
   SittingObama: {fileID: 585305917}
+  Trump1: {fileID: 485509015}
+  Trump2: {fileID: 1553168252}
+  Trump3: {fileID: 788185768}
 --- !u!1 &1436404257
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +2058,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100070, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dc67582422acf8c4d948bdc2aba1b856, type: 3}
@@ -2076,6 +2081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathMenu: {fileID: 1354385721}
   Player: {fileID: 2057551607}
+  Boat: {fileID: 872080841}
 --- !u!114 &1553168252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2268,6 +2274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deathMenu: {fileID: 1354385721}
   Player: {fileID: 2057551607}
+  Boat: {fileID: 0}
 --- !u!1 &1791354792
 GameObject:
   m_ObjectHideFlags: 0
