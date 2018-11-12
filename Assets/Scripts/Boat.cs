@@ -12,7 +12,7 @@ public class Boat : MonoBehaviour {
     public GameObject SittingObama;
     private Rigidbody rbody;
 
-    bool onBoat;
+    public bool onBoat;
 	// Use this for initialization
 	void Start ()
     {
@@ -28,7 +28,10 @@ public class Boat : MonoBehaviour {
 	void Update ()
     {
         if (onBoat)
+        {
+            player.GetComponent<Transform>().position = playerStartPos.transform.position;
             Control();
+        }
 
     }
 
@@ -44,10 +47,10 @@ public class Boat : MonoBehaviour {
         {
             rbody.isKinematic = true;
             boatCamera.SetActive(false);
-
+            player.GetComponent<CharacterController>().enabled = true;
             player.transform.position = playerStartPos.transform.position;
-            player.SetActive(true);
-            SittingObama.SetActive(false);
+            //player.SetActive(true);
+            //SittingObama.SetActive(false);
             player.GetComponentInChildren<Camera>().enabled = true;
 
             onBoat = false;
@@ -66,11 +69,12 @@ public class Boat : MonoBehaviour {
         {
             rbody.isKinematic = false;
             player.GetComponentInChildren<Camera>().enabled = false;
+            player.GetComponent<CharacterController>().enabled = false;
             boatCamera.SetActive(true);
             //change player to siting anymation instead, then trump doesnt have to track a new object
             //then move player to boat
-            player.SetActive(false);
-            SittingObama.SetActive(true);
+            //player.SetActive(false);
+            //SittingObama.SetActive(true);
 
             onBoat = true;
         }
