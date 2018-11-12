@@ -39,6 +39,19 @@ public class Boat : MonoBehaviour {
 
         rbody.AddTorque(0f, h * turnSpeed * Time.deltaTime, 0f);
         rbody.AddForce(transform.forward * v * accellerateSpeed * Time.deltaTime);
+
+        if (Input.GetKey("2"))
+        {
+            rbody.isKinematic = true;
+            boatCamera.SetActive(false);
+
+            player.transform.position = playerStartPos.transform.position;
+            player.SetActive(true);
+            SittingObama.SetActive(false);
+            player.GetComponentInChildren<Camera>().enabled = true;
+
+            onBoat = false;
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -52,15 +65,12 @@ public class Boat : MonoBehaviour {
         if (Input.GetKey("1"))
         {
             rbody.isKinematic = false;
-            GetComponent<Boat>().enabled = true;
             player.GetComponentInChildren<Camera>().enabled = false;
             boatCamera.SetActive(true);
             //change player to siting anymation instead, then trump doesnt have to track a new object
             //then move player to boat
             player.SetActive(false);
             SittingObama.SetActive(true);
-
-            player.transform.position = playerStartPos.transform.position;
 
             onBoat = true;
         }
