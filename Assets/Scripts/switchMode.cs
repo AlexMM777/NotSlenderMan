@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class switchMode : MonoBehaviour {
+public class SwitchMode : MonoBehaviour {
 
     public GameObject boat;
     public GameObject boatCamera;
@@ -14,17 +14,36 @@ public class switchMode : MonoBehaviour {
     public FollowCh Trump2;
     public FollowCh Trump3;
 
+    public bool onBoat;
+
     void Start()
     {
         boat.GetComponent<Rigidbody>().isKinematic = true;
         boat.GetComponent<Boat>().enabled = false;
         boatCamera.SetActive(false);
-        
+        onBoat = false;
 
         player.SetActive(true);
         SittingObama.SetActive(false);
     }
+    void Update()
+    {
+        //set to FPS mode//
+        if (Input.GetKey("2") && onBoat)
+        {
+            print("IM out");
+            Trump1.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
+            Trump2.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
+            Trump3.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
+            boat.GetComponent<Rigidbody>().isKinematic = true;
+            boat.GetComponent<Boat>().enabled = false;
+            boatCamera.SetActive(false);
 
+            player.SetActive(true);
+            SittingObama.SetActive(false);
+            onBoat = false;
+        }
+    }
 
     void OnTriggerStay(Collider other)
     {
@@ -46,21 +65,9 @@ public class switchMode : MonoBehaviour {
             Trump1.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
             Trump2.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
             Trump3.mTarget = GameObject.FindGameObjectWithTag("Boat").transform;
+            onBoat = true;
         }
 
-        //set to FPS mode//
-        if (Input.GetKey("2"))
-        {
-            Trump1.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
-            Trump2.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
-            Trump3.mTarget = GameObject.FindGameObjectWithTag("Player").transform;
-            boat.GetComponent<Rigidbody>().isKinematic = true;
-            boat.GetComponent<Boat>().enabled = false;
-            boatCamera.SetActive(false);
-
-            player.SetActive(true);
-            SittingObama.SetActive(false);
-        }
     }
 
 }

@@ -20,15 +20,6 @@ public class DeathMenu : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-
-        if (Dead.CompareTag("BoatController"))
-        {
-            deathMenu.SetActive(true);
-            Player.GetComponent<Boat>().enabled = false;
-            //LelToMakeMouseAppear
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
     }
     void OnTriggerExit(Collider Dead)
     {
