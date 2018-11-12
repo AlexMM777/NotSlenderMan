@@ -57,7 +57,12 @@ public class Boat : MonoBehaviour {
             boatCamera.SetActive(true);
             //change player to siting anymation instead, then trump doesnt have to track a new object
             //then move player to boat
+            player.SetActive(false);
+            SittingObama.SetActive(true);
+
             player.transform.position = playerStartPos.transform.position;
+
+            onBoat = true;
         }
 
     }
