@@ -15,10 +15,10 @@ public class DeathMenu : MonoBehaviour
         if (Dead.CompareTag("Player"))
         {
             deathMenu.SetActive(true);
-            Player.GetComponent<FirstPersonController>().enabled = false;
+            Player.GetComponent<vp_FPInput>().MouseCursorForced = true;
             //LelToMakeMouseAppear
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
+            //Cursor.lockState = CursorLockMode.None;
+            //Cursor.visible = true;
         }
     }
     void OnTriggerExit(Collider Dead)
