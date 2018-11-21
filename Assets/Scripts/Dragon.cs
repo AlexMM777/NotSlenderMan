@@ -17,7 +17,8 @@ public class Dragon : MonoBehaviour {
 	void Update () {
         timer += Time.deltaTime * 0.4f;
         angle = timer;
-        this.transform.position = new Vector3((center.transform.position.x + Mathf.Sin(angle) * rad), center.transform.position.y, ((center.transform.position.z + Mathf.Cos(angle) * rad)));
-        transform.Rotate(Vector3.up * Time.deltaTime * 15);
+        Vector3 target = new Vector3((center.transform.position.x + Mathf.Sin(angle) * rad), center.transform.position.y, ((center.transform.position.z + Mathf.Cos(angle) * rad)));
+        transform.LookAt(target);
+        this.transform.position = target;
     }
 }
